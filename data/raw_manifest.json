@@ -1,0 +1,30 @@
+{
+  "source": "Personally recorded by the applicant; copied byte-for-byte from supplied videos.",
+  "recordings": [
+    {
+      "file": "left push.mp4",
+      "bytes": 7942406,
+      "sha256": "3ff28f6dca2131bcfa4c48bcb56113cb9934d7275a7729064725c7ad74037bdc"
+    },
+    {
+      "file": "right push.mp4",
+      "bytes": 7515048,
+      "sha256": "d0bd728d2dbe28c0c4ddd5160b31f8327818708126887246dd8c3c3a43bb7c39"
+    },
+    {
+      "file": "down push.mp4",
+      "bytes": 7359598,
+      "sha256": "7e2d7eb7b175b7af786a422aa96bd21bd9f15d78978ecf4be960da4962174995"
+    },
+    {
+      "file": "top push.mp4",
+      "bytes": 7623691,
+      "sha256": "7b41740269828dbd2999716db43c3d137af18997f7649b982b9db19bd41b8f05"
+    },
+    {
+      "file": "calibration_pilot_v2.mp4",
+      "bytes": 8859326,
+      "sha256": "068c4f15ae9de59d33c2937abb6e1a01c4275dae75d76303bbd0fa1cad19f7a4"
+    }
+  ]
+}

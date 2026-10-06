@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "date": "2026-10-06",
+  "platform": "Linux x86_64 (Ubuntu 22.04 kernel), 2 CPU cores, CPU only",
+  "python": "3.11.17 (uv-managed)",
+  "install": "uv pip install -r requirements.txt equivalents at the pinned versions; torch 2.3.1 from PyPI; pybullet 3.2.5 built from the PyPI source distribution",
+  "checks": {
+    "verify_artifacts": "PASS",
+    "unit_tests": "21/21 passed",
+    "dataset_reextraction": "543 transitions; identical ids, splits and frames; max float difference 1.3e-14",
+    "retraining": "old_only and plus_pilot weights within 6e-6 of the submitted checkpoints (not bitwise identical across platforms)",
+    "frozen_precision_rerun": {
+      "trials": 48,
+      "successes_push_counts_and_chosen_actions_identical": true,
+      "geometric": "24/24 within 5 mm",
+      "learned": "23/24 within 5 mm; precision_06 fails at 56.37 mm, as saved",
+      "max_final_error_difference_mm": 4.5e-05,
+      "max_intermediate_state_difference": "3.4e-05 rad yaw"
+    }
+  },
+  "scope": "Reproduction of the saved cases with the submitted checkpoint on a second platform and a different PyBullet build. Not a new independent sample."
+}

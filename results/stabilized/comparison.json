@@ -1,0 +1,61 @@
+{
+  "control": {
+    "geometric": {
+      "episodes": 12,
+      "successes": 12,
+      "mean_final_error_cm": 1.0610080778813211,
+      "mean_pushes": 3.5833333333333335,
+      "checkpoint_sha256": "22fd49d7188e84afc5f5390b9a2352db088bf4821f63564813ab9aa0161fe330"
+    },
+    "original": {
+      "episodes": 12,
+      "successes": 6,
+      "mean_final_error_cm": 2.5878278916506914,
+      "mean_pushes": 5.75,
+      "checkpoint_sha256": "22fd49d7188e84afc5f5390b9a2352db088bf4821f63564813ab9aa0161fe330"
+    },
+    "offset_11mm": {
+      "episodes": 12,
+      "successes": 8,
+      "mean_final_error_cm": 2.6532874673092555,
+      "mean_pushes": 5.25,
+      "checkpoint_sha256": "0b828938409378b8063e3d15720a18b5734b747863a6f37b17137ff419987d23"
+    },
+    "old_only": {
+      "episodes": 12,
+      "successes": 8,
+      "mean_final_error_cm": 1.9987097591902272,
+      "mean_pushes": 5.833333333333333,
+      "checkpoint_sha256": "8ef7bca11847d2b319c30b244e6a1fca69e26b7792592c70540de8c61cb0a001"
+    },
+    "plus_pilot": {
+      "episodes": 12,
+      "successes": 12,
+      "mean_final_error_cm": 1.0986631957441604,
+      "mean_pushes": 4.166666666666667,
+      "checkpoint_sha256": "54194e94854162e1b523b7d47f242134f40fc2c7e5ad52cd45524c743e18dd8c"
+    }
+  },
+  "paired_conditions_verified": true,
+  "all_tool_contacts_positive": true,
+  "all_robot_body_contacts_zero": true,
+  "offline": {
+    "old_only": {
+      "samples": 58,
+      "position_mae_projected_cm": 0.1760612868269172,
+      "position_rmse_projected_cm": 0.23206371561351946,
+      "heading_mae_deg": 0.9884514761985094,
+      "moving_samples": 33,
+      "moving_position_mae_projected_cm": 0.11719991152388338
+    },
+    "plus_pilot": {
+      "samples": 58,
+      "position_mae_projected_cm": 0.1723555206089465,
+      "position_rmse_projected_cm": 0.22648555560202474,
+      "heading_mae_deg": 0.9255984510309506,
+      "moving_samples": 33,
+      "moving_position_mae_projected_cm": 0.13070078419745942
+    }
+  },
+  "status": "Reused development data and scenarios."
+}

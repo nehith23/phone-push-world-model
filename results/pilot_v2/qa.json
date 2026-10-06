@@ -1,0 +1,355 @@
+{
+  "source_filename": "calibration_pilot_v2.mp4",
+  "sha256": "068c4f15ae9de59d33c2937abb6e1a01c4275dae75d76303bbd0fa1cad19f7a4",
+  "resolution": [
+    1024,
+    576
+  ],
+  "fps": 29.991287230952917,
+  "frames": 1549,
+  "duration_s": 51.64833333333333,
+  "role": "Development pilot; not held-out evaluation data.",
+  "detector_revision": "Pilot-specific magenta hue 140-179; original red-wrap fallback disabled after visually finding a false front-marker association on the orange cover.",
+  "measurements_snapshot": {
+    "status": "Latest user-confirmed physical measurements; not yet used to recompute tracks, train models, or run simulation.",
+    "provenance": "User remeasured the same setup after securing the sticky notes with tape and marking their centres. User confirmed that 9 mm replaces the approximate 11 mm marker-to-contact estimate, and corrected the workspace/marker-spacing units to cm.",
+    "units": "mm",
+    "workspace": {
+      "width_left_to_right": 400.0,
+      "depth_near_to_far": 300.0,
+      "between": "corner-marker centres",
+      "approximate": true
+    },
+    "object": {
+      "length": 78.5,
+      "width": 37.0,
+      "roof_height": 33.0,
+      "roof_marker_center_spacing": 30.0,
+      "roof_marker_spacing_approximate": true,
+      "roof_marker_midpoint_equals_body_center_confirmed": null
+    },
+    "pusher": {
+      "marker_center_spacing": 40.0,
+      "marker_spacing_approximate": true,
+      "front_marker_center_to_contact_edge": 9.0,
+      "offset_measured_while_touching_cover": true,
+      "same_contact_edge_all_clips_confirmed": true,
+      "marker_height_above_table": null,
+      "pilot_v2_user_note": "User tried to push at the centre of the cover side and keep the pink markers flat; marker height was not measured. This does not establish roof-marker midpoint alignment or a measured tool height."
+    },
+    "video_directions": {
+      "left": "left to right",
+      "right": "right to left",
+      "top": "top to bottom / toward camera",
+      "down": "bottom to top / away from camera"
+    },
+    "historical_results": "manifest.json retains the dimensions assumed in the original and 11 mm experiments. Do not relabel those results as using these revised measurements. Securing stickers may affect exact centre locations, so historical pixel correspondences need checking before retrospective recalibration."
+  },
+  "initial_corner_pixels": [
+    [
+      148.0467987060547,
+      516.4935302734375
+    ],
+    [
+      960.3706665039062,
+      517.50830078125
+    ],
+    [
+      862.9546508789062,
+      36.76487731933594
+    ],
+    [
+      221.82655334472656,
+      35.09954833984375
+    ]
+  ],
+  "pixel_to_table_homography": [
+    [
+      0.06342862263193882,
+      0.009721243701586004,
+      -14.411364005073526
+    ],
+    [
+      7.930479254636095e-05,
+      -0.06348349239577113,
+      32.777072280920216
+    ],
+    [
+      -4.321298497922602e-06,
+      0.0005652301044391743,
+      1.0
+    ]
+  ],
+  "corner_detection_fraction": [
+    0.8360232408005165,
+    0.8334409296320207,
+    0.9380245319561007,
+    0.8695932859909619
+  ],
+  "corner_drift_px_p95": [
+    2.7717061955619684,
+    2.273225640817374,
+    14.408055823141357,
+    12.091786773788854
+  ],
+  "review_frames": 537,
+  "both_pairs_detected": 515,
+  "usable_three_frame_transitions": 164,
+  "episodes": [
+    {
+      "id": "v2_left_01",
+      "direction": "left",
+      "window_s": [
+        6.5,
+        8.8
+      ],
+      "screen_direction": [
+        1,
+        0
+      ],
+      "frames": 69,
+      "roof_pair_detected": 69,
+      "tool_pair_detected": 62,
+      "both_pairs_detected": 62,
+      "roof_spacing_projected_cm_p10_median_p90": [
+        3.1729663208073347,
+        3.1944515279694423,
+        3.2660502221521766
+      ],
+      "pusher_spacing_projected_cm_p10_median_p90": [
+        3.9013296500930505,
+        4.006500564681477,
+        4.262124686116937
+      ],
+      "object_displacement_projected_cm": [
+        8.85605578829276,
+        0.38397365752962465
+      ],
+      "heading_change_deg": 1.869895502891549
+    },
+    {
+      "id": "v2_left_02",
+      "direction": "left",
+      "window_s": [
+        12.1,
+        14.2
+      ],
+      "screen_direction": [
+        1,
+        0
+      ],
+      "frames": 63,
+      "roof_pair_detected": 63,
+      "tool_pair_detected": 59,
+      "both_pairs_detected": 59,
+      "roof_spacing_projected_cm_p10_median_p90": [
+        3.138305063830143,
+        3.19491457741228,
+        3.2595948548891878
+      ],
+      "pusher_spacing_projected_cm_p10_median_p90": [
+        3.931254548266477,
+        3.9812193121238835,
+        4.074190456380696
+      ],
+      "object_displacement_projected_cm": [
+        10.592086957067462,
+        0.24645969519282573
+      ],
+      "heading_change_deg": 1.288750489654169
+    },
+    {
+      "id": "v2_top_01",
+      "direction": "top",
+      "window_s": [
+        19.6,
+        22.7
+      ],
+      "screen_direction": [
+        0,
+        1
+      ],
+      "frames": 93,
+      "roof_pair_detected": 93,
+      "tool_pair_detected": 93,
+      "both_pairs_detected": 93,
+      "roof_spacing_projected_cm_p10_median_p90": [
+        3.1783935228674562,
+        3.1905742450964207,
+        3.211170002712275
+      ],
+      "pusher_spacing_projected_cm_p10_median_p90": [
+        3.9564903187696276,
+        4.21302098325555,
+        4.589397796152171
+      ],
+      "object_displacement_projected_cm": [
+        3.1807685949825775,
+        -6.514972456519182
+      ],
+      "heading_change_deg": 28.35689738598816
+    },
+    {
+      "id": "v2_top_02",
+      "direction": "top",
+      "window_s": [
+        26.1,
+        28.9
+      ],
+      "screen_direction": [
+        0,
+        1
+      ],
+      "frames": 84,
+      "roof_pair_detected": 84,
+      "tool_pair_detected": 83,
+      "both_pairs_detected": 83,
+      "roof_spacing_projected_cm_p10_median_p90": [
+        3.17882647955961,
+        3.209327855628317,
+        3.2427466061113805
+      ],
+      "pusher_spacing_projected_cm_p10_median_p90": [
+        3.9960446808843413,
+        4.201300168195619,
+        4.846971354918414
+      ],
+      "object_displacement_projected_cm": [
+        -3.5987429716073116,
+        -7.58415372131836
+      ],
+      "heading_change_deg": -71.19496868042663
+    },
+    {
+      "id": "v2_right_01",
+      "direction": "right",
+      "window_s": [
+        32.7,
+        34.3
+      ],
+      "screen_direction": [
+        -1,
+        0
+      ],
+      "frames": 48,
+      "roof_pair_detected": 48,
+      "tool_pair_detected": 48,
+      "both_pairs_detected": 48,
+      "roof_spacing_projected_cm_p10_median_p90": [
+        3.176128802215767,
+        3.1960504023982654,
+        3.215887262811519
+      ],
+      "pusher_spacing_projected_cm_p10_median_p90": [
+        3.832119365521322,
+        3.9233715235810287,
+        4.276562219263231
+      ],
+      "object_displacement_projected_cm": [
+        -9.60092483838454,
+        -1.598837711780586
+      ],
+      "heading_change_deg": 12.85272231101366
+    },
+    {
+      "id": "v2_right_02",
+      "direction": "right",
+      "window_s": [
+        37.4,
+        39.2
+      ],
+      "screen_direction": [
+        -1,
+        0
+      ],
+      "frames": 54,
+      "roof_pair_detected": 54,
+      "tool_pair_detected": 50,
+      "both_pairs_detected": 50,
+      "roof_spacing_projected_cm_p10_median_p90": [
+        3.169245642774587,
+        3.1979108462285826,
+        3.220432315082074
+      ],
+      "pusher_spacing_projected_cm_p10_median_p90": [
+        3.831784314406185,
+        3.915214967523653,
+        4.211288161957028
+      ],
+      "object_displacement_projected_cm": [
+        -10.557118923937772,
+        -2.307807522027943
+      ],
+      "heading_change_deg": 9.692316513713275
+    },
+    {
+      "id": "v2_down_01",
+      "direction": "down",
+      "window_s": [
+        43.1,
+        45.5
+      ],
+      "screen_direction": [
+        0,
+        -1
+      ],
+      "frames": 72,
+      "roof_pair_detected": 71,
+      "tool_pair_detected": 66,
+      "both_pairs_detected": 66,
+      "roof_spacing_projected_cm_p10_median_p90": [
+        3.165252198400812,
+        3.1999931991814456,
+        3.2565036153804763
+      ],
+      "pusher_spacing_projected_cm_p10_median_p90": [
+        3.365654823031295,
+        3.420930695081575,
+        3.9062378998125995
+      ],
+      "object_displacement_projected_cm": [
+        2.584704102509363,
+        8.869770916183743
+      ],
+      "heading_change_deg": -50.96585874467547
+    },
+    {
+      "id": "v2_down_02",
+      "direction": "down",
+      "window_s": [
+        47.6,
+        49.4
+      ],
+      "screen_direction": [
+        0,
+        -1
+      ],
+      "frames": 54,
+      "roof_pair_detected": 54,
+      "tool_pair_detected": 54,
+      "both_pairs_detected": 54,
+      "roof_spacing_projected_cm_p10_median_p90": [
+        3.1563363201537387,
+        3.21584529058691,
+        3.293950055424783
+      ],
+      "pusher_spacing_projected_cm_p10_median_p90": [
+        3.116298674535803,
+        3.1866507854252353,
+        3.3846984566579295
+      ],
+      "object_displacement_projected_cm": [
+        -3.2800465896914304,
+        10.702738033298413
+      ],
+      "heading_change_deg": 46.20265185206645
+    }
+  ],
+  "limitations": [
+    "Detector coverage is not hand-labelled accuracy.",
+    "All metric positions are tabletop-projected proxies; roof height and pusher height remain uncorrected.",
+    "Marker centres use colour-blob centroids, not the manually drawn centre crosses.",
+    "Manual windows include approach and withdrawal; no contact labels are inferred from future object motion.",
+    "No model has been trained on this pilot by this review script."
+  ]
+}

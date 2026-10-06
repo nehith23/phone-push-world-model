@@ -1,0 +1,48 @@
+{
+  "clip": "left",
+  "episode": 1,
+  "source_selection": {
+    "source_frames": [
+      174,
+      226
+    ],
+    "source_time_s": [
+      5.802049469964665,
+      7.535995288574794
+    ],
+    "review_frames": 87,
+    "used_frames": 53,
+    "selection": "Longest continuously observed run; trimmed to observed object movement with 2-frame margins. No missing-frame interpolation."
+  },
+  "friction_assumed": 0.4,
+  "mass_kg_assumed": 0.1,
+  "replay_duration_s": 3.0,
+  "initial_object_xy_m": [
+    0.49998051597763354,
+    -1.1484117896173102e-05
+  ],
+  "approach_displacement_m": [
+    -1.9484022366456077e-05,
+    -1.1484117896173102e-05
+  ],
+  "final_object_xy_m": [
+    0.5655104781854456,
+    0.025581331780207127
+  ],
+  "object_displacement_m": [
+    0.0655299622078121,
+    0.0255928158981033
+  ],
+  "final_yaw_rad": 0.5974602769664156,
+  "physical_tool_contact_steps": 809,
+  "robot_body_contact_steps": 0,
+  "source_tool_displacement_projected_m": [
+    0.07969857248413029,
+    0.006094821418765406
+  ],
+  "object_height_range_m": [
+    0.017485755686271028,
+    0.01749000048734993
+  ],
+  "scope": "Physical-contact demonstration replay, not a learned policy or target-success benchmark. Trajectories derive from tabletop-projected video markers; cover approximated by solid box."
+}

@@ -1,0 +1,443 @@
+{
+  "status": "Development data with per-frame observed table homographies; not calibrated 3-D poses.",
+  "measurements_snapshot": {
+    "status": "Latest user-confirmed physical measurements. Workspace and contact offset used for pilot_v2 QA tracks only. Not yet used to recompute historical tracks, train models, or run simulation.",
+    "provenance": "User remeasured the same setup after securing the sticky notes with tape and marking their centres. User confirmed that 9 mm replaces the approximate 11 mm marker-to-contact estimate, and corrected the workspace/marker-spacing units to cm.",
+    "units": "mm",
+    "workspace": {
+      "width_left_to_right": 400.0,
+      "depth_near_to_far": 300.0,
+      "between": "corner-marker centres",
+      "approximate": true
+    },
+    "object": {
+      "length": 78.5,
+      "width": 37.0,
+      "roof_height": 33.0,
+      "roof_marker_center_spacing": 30.0,
+      "roof_marker_spacing_approximate": true,
+      "roof_marker_midpoint_equals_body_center_confirmed": null
+    },
+    "pusher": {
+      "marker_center_spacing": 40.0,
+      "marker_spacing_approximate": true,
+      "front_marker_center_to_contact_edge": 9.0,
+      "offset_measured_while_touching_cover": true,
+      "same_contact_edge_all_clips_confirmed": true,
+      "marker_height_above_table": null,
+      "pilot_v2_user_note": "User tried to push at the centre of the cover side and keep the pink markers flat; marker height was not measured. This does not establish roof-marker midpoint alignment or a measured tool height."
+    },
+    "video_directions": {
+      "left": "left to right",
+      "right": "right to left",
+      "top": "top to bottom / toward camera",
+      "down": "bottom to top / away from camera"
+    },
+    "historical_results": "manifest.json retains the dimensions assumed in the original and 11 mm experiments. Do not relabel those results as using these revised measurements. Securing stickers may affect exact centre locations, so historical pixel correspondences need checking before retrospective recalibration."
+  },
+  "sources": [
+    {
+      "filename": "left push.mp4",
+      "sha256": "3ff28f6dca2131bcfa4c48bcb56113cb9934d7275a7729064725c7ad74037bdc",
+      "fps": 29.98940303779583,
+      "episodes": [
+        {
+          "episode": "left_01",
+          "split": "train",
+          "frames": 87,
+          "frame_status": {
+            "accepted": 86,
+            "missing_marker": 1
+          },
+          "transitions": 28
+        },
+        {
+          "episode": "left_02",
+          "split": "train",
+          "frames": 87,
+          "frame_status": {
+            "accepted": 87
+          },
+          "transitions": 26
+        },
+        {
+          "episode": "left_03",
+          "split": "train",
+          "frames": 66,
+          "frame_status": {
+            "accepted": 66
+          },
+          "transitions": 21
+        },
+        {
+          "episode": "left_04",
+          "split": "train",
+          "frames": 63,
+          "frame_status": {
+            "accepted": 63
+          },
+          "transitions": 20
+        },
+        {
+          "episode": "left_05",
+          "split": "validation",
+          "frames": 57,
+          "frame_status": {
+            "accepted": 57
+          },
+          "transitions": 18
+        },
+        {
+          "episode": "left_06",
+          "split": "test",
+          "frames": 57,
+          "frame_status": {
+            "accepted": 57
+          },
+          "transitions": 18
+        }
+      ],
+      "stationary_probe": null
+    },
+    {
+      "filename": "right push.mp4",
+      "sha256": "d0bd728d2dbe28c0c4ddd5160b31f8327818708126887246dd8c3c3a43bb7c39",
+      "fps": 29.981746273197444,
+      "episodes": [
+        {
+          "episode": "right_01",
+          "split": "train",
+          "frames": 57,
+          "frame_status": {
+            "accepted": 42,
+            "missing_or_ambiguous_corners": 15
+          },
+          "transitions": 11
+        },
+        {
+          "episode": "right_02",
+          "split": "train",
+          "frames": 66,
+          "frame_status": {
+            "accepted": 66
+          },
+          "transitions": 20
+        },
+        {
+          "episode": "right_03",
+          "split": "train",
+          "frames": 69,
+          "frame_status": {
+            "accepted": 67,
+            "missing_or_ambiguous_corners": 2
+          },
+          "transitions": 21
+        },
+        {
+          "episode": "right_04",
+          "split": "train",
+          "frames": 57,
+          "frame_status": {
+            "accepted": 57
+          },
+          "transitions": 18
+        },
+        {
+          "episode": "right_05",
+          "split": "validation",
+          "frames": 66,
+          "frame_status": {
+            "accepted": 56,
+            "missing_marker": 5,
+            "missing_or_ambiguous_corners": 5
+          },
+          "transitions": 16
+        },
+        {
+          "episode": "right_06",
+          "split": "test",
+          "frames": 63,
+          "frame_status": {
+            "accepted": 50,
+            "missing_marker": 4,
+            "missing_or_ambiguous_corners": 9
+          },
+          "transitions": 15
+        }
+      ],
+      "stationary_probe": null
+    },
+    {
+      "filename": "down push.mp4",
+      "sha256": "7e2d7eb7b175b7af786a422aa96bd21bd9f15d78978ecf4be960da4962174995",
+      "fps": 29.976833976833976,
+      "episodes": [
+        {
+          "episode": "down_01",
+          "split": "train",
+          "frames": 66,
+          "frame_status": {
+            "accepted": 29,
+            "missing_marker": 1,
+            "missing_or_ambiguous_corners": 28,
+            "tool_spacing": 8
+          },
+          "transitions": 8
+        },
+        {
+          "episode": "down_02",
+          "split": "train",
+          "frames": 66,
+          "frame_status": {
+            "accepted": 20,
+            "missing_marker": 3,
+            "missing_or_ambiguous_corners": 2,
+            "tool_spacing": 41
+          },
+          "transitions": 3
+        },
+        {
+          "episode": "down_03",
+          "split": "train",
+          "frames": 72,
+          "frame_status": {
+            "accepted": 15,
+            "missing_marker": 1,
+            "missing_or_ambiguous_corners": 8,
+            "tool_spacing": 48
+          },
+          "transitions": 3
+        },
+        {
+          "episode": "down_04",
+          "split": "train",
+          "frames": 72,
+          "frame_status": {
+            "accepted": 3,
+            "missing_marker": 33,
+            "missing_or_ambiguous_corners": 16,
+            "tool_spacing": 20
+          },
+          "transitions": 0
+        },
+        {
+          "episode": "down_05",
+          "split": "validation",
+          "frames": 57,
+          "frame_status": {
+            "accepted": 4,
+            "missing_marker": 30,
+            "missing_or_ambiguous_corners": 2,
+            "tool_spacing": 21
+          },
+          "transitions": 1
+        },
+        {
+          "episode": "down_06",
+          "split": "test",
+          "frames": 78,
+          "frame_status": {
+            "accepted": 20,
+            "tool_spacing": 58
+          },
+          "transitions": 5
+        },
+        {
+          "episode": "down_07",
+          "split": "train",
+          "frames": 78,
+          "frame_status": {
+            "accepted": 7,
+            "missing_marker": 17,
+            "missing_or_ambiguous_corners": 17,
+            "tool_spacing": 37
+          },
+          "transitions": 0
+        }
+      ],
+      "stationary_probe": null
+    },
+    {
+      "filename": "top push.mp4",
+      "sha256": "7b41740269828dbd2999716db43c3d137af18997f7649b982b9db19bd41b8f05",
+      "fps": 29.994498441225012,
+      "episodes": [
+        {
+          "episode": "top_01",
+          "split": "train",
+          "frames": 75,
+          "frame_status": {
+            "accepted": 63,
+            "missing_marker": 1,
+            "missing_or_ambiguous_corners": 10,
+            "tool_spacing": 1
+          },
+          "transitions": 20
+        },
+        {
+          "episode": "top_02",
+          "split": "train",
+          "frames": 78,
+          "frame_status": {
+            "accepted": 71,
+            "tool_spacing": 7
+          },
+          "transitions": 21
+        },
+        {
+          "episode": "top_03",
+          "split": "train",
+          "frames": 81,
+          "frame_status": {
+            "accepted": 76,
+            "tool_spacing": 5
+          },
+          "transitions": 24
+        },
+        {
+          "episode": "top_04",
+          "split": "train",
+          "frames": 78,
+          "frame_status": {
+            "accepted": 65,
+            "missing_marker": 4,
+            "missing_or_ambiguous_corners": 9
+          },
+          "transitions": 20
+        },
+        {
+          "episode": "top_05",
+          "split": "validation",
+          "frames": 81,
+          "frame_status": {
+            "accepted": 81
+          },
+          "transitions": 26
+        },
+        {
+          "episode": "top_06",
+          "split": "test",
+          "frames": 69,
+          "frame_status": {
+            "accepted": 61,
+            "missing_or_ambiguous_corners": 8
+          },
+          "transitions": 20
+        }
+      ],
+      "stationary_probe": null
+    },
+    {
+      "filename": "calibration_pilot_v2.mp4",
+      "sha256": "068c4f15ae9de59d33c2937abb6e1a01c4275dae75d76303bbd0fa1cad19f7a4",
+      "fps": 29.991287230952917,
+      "episodes": [
+        {
+          "episode": "v2_left_01",
+          "split": "train",
+          "frames": 69,
+          "frame_status": {
+            "accepted": 60,
+            "missing_marker": 1,
+            "missing_or_ambiguous_corners": 8
+          },
+          "transitions": 19
+        },
+        {
+          "episode": "v2_left_02",
+          "split": "train",
+          "frames": 63,
+          "frame_status": {
+            "accepted": 59,
+            "missing_or_ambiguous_corners": 4
+          },
+          "transitions": 19
+        },
+        {
+          "episode": "v2_top_01",
+          "split": "train",
+          "frames": 93,
+          "frame_status": {
+            "accepted": 93
+          },
+          "transitions": 30
+        },
+        {
+          "episode": "v2_top_02",
+          "split": "train",
+          "frames": 84,
+          "frame_status": {
+            "accepted": 79,
+            "missing_marker": 1,
+            "tool_spacing": 4
+          },
+          "transitions": 25
+        },
+        {
+          "episode": "v2_right_01",
+          "split": "train",
+          "frames": 48,
+          "frame_status": {
+            "accepted": 47,
+            "missing_or_ambiguous_corners": 1
+          },
+          "transitions": 15
+        },
+        {
+          "episode": "v2_right_02",
+          "split": "train",
+          "frames": 54,
+          "frame_status": {
+            "accepted": 48,
+            "missing_or_ambiguous_corners": 6
+          },
+          "transitions": 15
+        },
+        {
+          "episode": "v2_down_01",
+          "split": "train",
+          "frames": 72,
+          "frame_status": {
+            "accepted": 62,
+            "missing_or_ambiguous_corners": 10
+          },
+          "transitions": 20
+        },
+        {
+          "episode": "v2_down_02",
+          "split": "train",
+          "frames": 54,
+          "frame_status": {
+            "accepted": 54
+          },
+          "transitions": 17
+        }
+      ],
+      "stationary_probe": {
+        "frames": 150,
+        "fixed_mapping_position_std_cm": [
+          0.006882553558879389,
+          0.005082757219519956
+        ],
+        "dynamic_mapping_position_std_cm": [
+          0.00918078684950556,
+          0.0072345762435542865
+        ],
+        "note": "Stationary cover in first 5 seconds. This checks jitter, not metric accuracy or later motion compensation."
+      }
+    }
+  ],
+  "split_transitions": {
+    "train": 424,
+    "validation": 61,
+    "test": 58
+  },
+  "pilot_train_transitions": 160,
+  "limitations": [
+    "No held-out fresh final test session.",
+    "Table homography does not correct roof/tool height, tilt, object-centre alignment or different dynamics.",
+    "Broad spacing gates may discard directions unequally; inspect per-episode attrition.",
+    "Measured 9 mm offset applied retrospectively to original clips as an explicit assumption.",
+    "Four corner reprojection residuals are not independent validation of calibration."
+  ]
+}

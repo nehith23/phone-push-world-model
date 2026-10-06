@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "platform": "Windows x64",
+  "python": "3.11.10",
+  "environment": "New Conda prefix with exact conda-forge pybullet 3.25 py311hbc92ba2_3; other packages installed from pinned requirements.",
+  "package_versions": {
+    "numpy": "1.26.4",
+    "opencv-python": "4.9.0.80",
+    "scipy": "1.14.1",
+    "scikit-learn": "1.5.2",
+    "torch": "2.3.1",
+    "matplotlib": "3.9.2",
+    "pybullet": "3.2.5",
+    "Pillow": "11.0.0"
+  },
+  "simulation_runs_reproduced": 48,
+  "same_successes_push_counts_and_candidate_indices": true,
+  "maximum_state_component_absolute_difference": 0.0,
+  "state_comparison_tolerance": 1e-09,
+  "reextracted_data_shapes": {
+    "features": [
+      543,
+      12
+    ],
+    "targets": [
+      543,
+      3
+    ],
+    "copy_targets": [
+      543,
+      3
+    ],
+    "episode": [
+      543
+    ],
+    "split": [
+      543
+    ],
+    "time_s": [
+      543
+    ],
+    "start_frame": [
+      543
+    ],
+    "end_frame": [
+      543
+    ]
+  },
+  "data_comparison_absolute_tolerance": 1e-08,
+  "scope": "Reproduction of the saved cases, not an independent evaluation. Model was not retrained for this control check."
+}

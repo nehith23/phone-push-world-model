@@ -1,0 +1,10 @@
+{
+  "status": "Development experiment specified before corrected training and simulation runs; original evaluation already inspected.",
+  "measurement": "11 mm from front sticker centre to the same contacting edge, 40 mm sticker separation, confirmed by user for all clips.",
+  "training_transform": "contact = front + (11/40) * (front - rear). Action is the difference between contact proxies at the transition endpoints; shaft direction unchanged.",
+  "assumption": "Local affine projection along the caliper shaft. Not exact projective extrapolation or correction of roof height, tool height, tilt, or marker-midpoint/object-centre mismatch.",
+  "simulation_transform": "Use sphere centre plus 8 mm along candidate push direction as the contact proxy. Robot motions unchanged.",
+  "training": "Same 511 transitions, whole-push split, seed 7, architecture, optimizer, early stopping and validation selection as original. No new training recordings or simulator training transitions.",
+  "comparison": "Original marker model, 11 mm contact-proxy model, and unchanged geometric controller on the same 12 scenarios. These scenarios are development comparisons now.",
+  "scope": "One prescribed geometry representation experiment. No offset sweep or selection on reused evaluation outcomes. Preserve original checkpoint, tracks and reports. A fresh final evaluation follows any later development."
+}

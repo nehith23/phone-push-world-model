@@ -1,0 +1,364 @@
+{
+  "protocol": {
+    "status": "New simulation scenarios saved before either fine-action controller runs. Parameters fixed after the 12-case precision development comparison.",
+    "checkpoint_sha256": "54194e94854162e1b523b7d47f242134f40fc2c7e5ad52cd45524c743e18dd8c",
+    "code_sha256": {
+      "precision_experiment.py": "7a1ff57fbdc3941103f5214b52b535d92db6d062f5a269760b23f93e98c66043",
+      "goal_control.py": "1bee25cecdd8c9bf3d01e8b0c91b2058d1115d1a18998cc3f864130f5b7f62f4",
+      "replay_panda.py": "dc97ce4fae20a8285530981d54d9f8eb1249117a5342406c73d503d768675217",
+      "train_baseline.py": "2800cae5280a12c6ded71420028f89fd200357cd2401566971b17fb9136a4edb",
+      "evaluate_precision_frozen.py": "8faeed68d515b3bf1404ba690866b65c72fe105d48cdc28120a9036fa7499731"
+    },
+    "object_dimensions_m": [
+      0.0785,
+      0.037,
+      0.033
+    ],
+    "success_distance_m": 0.005,
+    "max_pushes": 12,
+    "fine_action_activation_distance_m": 0.02,
+    "coarse_lengths_m": [
+      0.01,
+      0.02
+    ],
+    "added_fine_lengths_m": [
+      0.002,
+      0.005
+    ],
+    "comparison": "Geometric fine versus learned fine, 5 mm tolerance, 12 pushes. Same frozen network and observed simulator pose.",
+    "prediction": "Short strokes use >=2 nominal 0.1 s model steps matching the minimum 0.2 s physical push execution. No retraining; low-speed predictions may be inaccurate.",
+    "observations": "Exact simulated object position and yaw; this does not establish physical millimetre accuracy.",
+    "scope": "One fresh precision simulation sample; no new real-world recording or physical accuracy claim. Do not tune on these outcomes and continue calling them unseen.",
+    "evaluation": [
+      {
+        "id": "precision_01",
+        "initial_xy": [
+          0.4887647106401515,
+          0.007369780008593844
+        ],
+        "initial_yaw": 0.06576149927958586,
+        "goal_xy": [
+          0.44195753580116776,
+          -0.04764986475013869
+        ],
+        "friction": 0.4
+      },
+      {
+        "id": "precision_02",
+        "initial_xy": [
+          0.5092789788263594,
+          -0.0021041328385720034
+        ],
+        "initial_yaw": 0.0995907106169796,
+        "goal_xy": [
+          0.5721633783839546,
+          0.015111252108388719
+        ],
+        "friction": 0.4
+      },
+      {
+        "id": "precision_03",
+        "initial_xy": [
+          0.48956467953681737,
+          0.0007591589219248934
+        ],
+        "initial_yaw": 0.22593271238403162,
+        "goal_xy": [
+          0.5351969377362256,
+          0.04472301726126991
+        ],
+        "friction": 0.25
+      },
+      {
+        "id": "precision_04",
+        "initial_xy": [
+          0.49102319196867716,
+          -0.010270364142636499
+        ],
+        "initial_yaw": -0.176651340552145,
+        "goal_xy": [
+          0.42598022934242846,
+          -0.00861441620551957
+        ],
+        "friction": 0.6
+      },
+      {
+        "id": "precision_05",
+        "initial_xy": [
+          0.5064356141927754,
+          0.004399667270881157
+        ],
+        "initial_yaw": 0.02367649226227092,
+        "goal_xy": [
+          0.4766631632361877,
+          -0.05347230276469837
+        ],
+        "friction": 0.4
+      },
+      {
+        "id": "precision_06",
+        "initial_xy": [
+          0.49957316591449047,
+          -0.004413877685126591
+        ],
+        "initial_yaw": -0.02142684997152794,
+        "goal_xy": [
+          0.520467382299646,
+          -0.07222786696273147
+        ],
+        "friction": 0.25
+      },
+      {
+        "id": "precision_07",
+        "initial_xy": [
+          0.49073485956647833,
+          0.005159887879483103
+        ],
+        "initial_yaw": 0.21927843855897627,
+        "goal_xy": [
+          0.4386125184335775,
+          -0.046163751326171634
+        ],
+        "friction": 0.25
+      },
+      {
+        "id": "precision_08",
+        "initial_xy": [
+          0.5097465050187613,
+          0.011215980638850962
+        ],
+        "initial_yaw": 0.08578722461185306,
+        "goal_xy": [
+          0.46345704172003355,
+          -0.0338997423347803
+        ],
+        "friction": 0.6
+      },
+      {
+        "id": "precision_09",
+        "initial_xy": [
+          0.5142406207107129,
+          0.012867950080379754
+        ],
+        "initial_yaw": -0.0826615820265254,
+        "goal_xy": [
+          0.5769121419496953,
+          0.035474522103900466
+        ],
+        "friction": 0.25
+      },
+      {
+        "id": "precision_10",
+        "initial_xy": [
+          0.49875066072100105,
+          -0.005476892609236254
+        ],
+        "initial_yaw": -0.008560016481343191,
+        "goal_xy": [
+          0.5592496524411021,
+          -0.0014356867313232834
+        ],
+        "friction": 0.4
+      },
+      {
+        "id": "precision_11",
+        "initial_xy": [
+          0.4929350419223147,
+          -0.006938849789481694
+        ],
+        "initial_yaw": -0.048119917809754664,
+        "goal_xy": [
+          0.4538334837599475,
+          -0.06744670698342979
+        ],
+        "friction": 0.6
+      },
+      {
+        "id": "precision_12",
+        "initial_xy": [
+          0.504545750196507,
+          -0.0015928484375352433
+        ],
+        "initial_yaw": 0.08361541670303574,
+        "goal_xy": [
+          0.5316997112838115,
+          0.05239999427616773
+        ],
+        "friction": 0.6
+      },
+      {
+        "id": "precision_13",
+        "initial_xy": [
+          0.5130443611626245,
+          0.012018043655018126
+        ],
+        "initial_yaw": -0.2296163239460356,
+        "goal_xy": [
+          0.4496886712343404,
+          -0.012584041581342131
+        ],
+        "friction": 0.6
+      },
+      {
+        "id": "precision_14",
+        "initial_xy": [
+          0.5031874409793097,
+          -0.012309803795266964
+        ],
+        "initial_yaw": -0.10927833797386782,
+        "goal_xy": [
+          0.44957790410270626,
+          0.028037436834979196
+        ],
+        "friction": 0.25
+      },
+      {
+        "id": "precision_15",
+        "initial_xy": [
+          0.504855134193722,
+          -0.005826318744778906
+        ],
+        "initial_yaw": 0.17909509117925537,
+        "goal_xy": [
+          0.4820920258472054,
+          -0.05647230597048099
+        ],
+        "friction": 0.25
+      },
+      {
+        "id": "precision_16",
+        "initial_xy": [
+          0.49143862358035567,
+          -0.008931158085582657
+        ],
+        "initial_yaw": -0.2118516709970874,
+        "goal_xy": [
+          0.5163411610152887,
+          -0.07485122988783682
+        ],
+        "friction": 0.6
+      },
+      {
+        "id": "precision_17",
+        "initial_xy": [
+          0.49333171559989475,
+          0.002592511592692928
+        ],
+        "initial_yaw": 0.05396936019180182,
+        "goal_xy": [
+          0.4769771794286419,
+          0.05544363908642478
+        ],
+        "friction": 0.4
+      },
+      {
+        "id": "precision_18",
+        "initial_xy": [
+          0.5008229073803077,
+          -0.0008798373473409941
+        ],
+        "initial_yaw": -0.24729787816139387,
+        "goal_xy": [
+          0.5005915007163094,
+          -0.05750290551911491
+        ],
+        "friction": 0.6
+      },
+      {
+        "id": "precision_19",
+        "initial_xy": [
+          0.48524197805722535,
+          0.011553722901412978
+        ],
+        "initial_yaw": 0.04134015422348947,
+        "goal_xy": [
+          0.4701819475779944,
+          0.07867924448402018
+        ],
+        "friction": 0.4
+      },
+      {
+        "id": "precision_20",
+        "initial_xy": [
+          0.5005711724466679,
+          0.0035163498446916797
+        ],
+        "initial_yaw": 0.13619496817172883,
+        "goal_xy": [
+          0.5179837947117786,
+          0.06920674819701202
+        ],
+        "friction": 0.4
+      },
+      {
+        "id": "precision_21",
+        "initial_xy": [
+          0.5123660945891682,
+          0.0004147792090617927
+        ],
+        "initial_yaw": 0.155223891278211,
+        "goal_xy": [
+          0.553814539078114,
+          0.060655310855218456
+        ],
+        "friction": 0.4
+      },
+      {
+        "id": "precision_22",
+        "initial_xy": [
+          0.5097069647400929,
+          0.010436067946255727
+        ],
+        "initial_yaw": -0.07760107030999297,
+        "goal_xy": [
+          0.5614901070852734,
+          0.029922972493887857
+        ],
+        "friction": 0.25
+      },
+      {
+        "id": "precision_23",
+        "initial_xy": [
+          0.5148759454921619,
+          -0.010742603527866046
+        ],
+        "initial_yaw": -0.08579742967347409,
+        "goal_xy": [
+          0.51955924704352,
+          -0.06771272822299718
+        ],
+        "friction": 0.6
+      },
+      {
+        "id": "precision_24",
+        "initial_xy": [
+          0.5035666350110762,
+          -0.0014115196563944162
+        ],
+        "initial_yaw": 0.05058058394538839,
+        "goal_xy": [
+          0.46536914551499103,
+          -0.044764003533161706
+        ],
+        "friction": 0.25
+      }
+    ],
+    "seed": 637251
+  },
+  "summary": {
+    "geometric": {
+      "episodes": 24,
+      "successes": 24,
+      "mean_final_error_mm": 2.395616805495844,
+      "median_final_error_mm": 2.3152667252896686,
+      "mean_pushes": 4.875
+    },
+    "learned": {
+      "episodes": 24,
+      "successes": 23,
+      "mean_final_error_mm": 5.6025135399684585,
+      "median_final_error_mm": 3.850878978338729,
+      "mean_pushes": 7.916666666666667
+    }
+  }
+}

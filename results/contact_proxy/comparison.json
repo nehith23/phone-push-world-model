@@ -1,0 +1,35 @@
+{
+  "status": "Post-evaluation development comparison; no new held-out data.",
+  "original_checkpoint_sha256": "22fd49d7188e84afc5f5390b9a2352db088bf4821f63564813ab9aa0161fe330",
+  "corrected_checkpoint_sha256": "0b828938409378b8063e3d15720a18b5734b747863a6f37b17137ff419987d23",
+  "same_dataset_and_splits": true,
+  "geometric_trajectories_identical": true,
+  "control": {
+    "original": {
+      "episodes": 12,
+      "successes": 6,
+      "mean_final_error_cm": 2.6161026706504873,
+      "mean_pushes": 5.75
+    },
+    "contact_proxy": {
+      "episodes": 12,
+      "successes": 7,
+      "mean_final_error_cm": 2.6774615216839432,
+      "mean_pushes": 5.916666666666667
+    },
+    "geometric": {
+      "episodes": 12,
+      "successes": 12,
+      "mean_final_error_cm": 1.0022371718835787,
+      "mean_pushes": 3.6666666666666665
+    }
+  },
+  "position_prediction_mae_projected_cm": {
+    "original": 0.18804493061732042,
+    "contact_proxy": 0.17126306557112506
+  },
+  "rotation_prediction_mae_deg": {
+    "original": 0.8784639902569119,
+    "contact_proxy": 1.069975496173321
+  }
+}

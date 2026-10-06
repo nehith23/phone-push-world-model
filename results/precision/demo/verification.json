@@ -1,0 +1,40 @@
+{
+  "selection": "First scenario by index and all learned failures; not representative random sampling.",
+  "checks": [
+    {
+      "case": "precision_01",
+      "states_match_saved_atol": 1e-12,
+      "candidate_indices_match": true,
+      "outcomes": {
+        "geometric": {
+          "error_mm": 0.8420069402206417,
+          "success": true
+        },
+        "learned": {
+          "error_mm": 0.9630350634755961,
+          "success": true
+        }
+      }
+    },
+    {
+      "case": "precision_06",
+      "states_match_saved_atol": 1e-12,
+      "candidate_indices_match": true,
+      "outcomes": {
+        "geometric": {
+          "error_mm": 2.322200294584241,
+          "success": true
+        },
+        "learned": {
+          "error_mm": 56.368182512524335,
+          "success": false
+        }
+      }
+    }
+  ],
+  "decoded_frames": 408,
+  "fps": 10.0,
+  "duration_s": 40.8,
+  "checkpoint_sha256": "54194e94854162e1b523b7d47f242134f40fc2c7e5ad52cd45524c743e18dd8c",
+  "scope": "Rendered replay of saved evaluation, not new trials."
+}

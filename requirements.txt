@@ -1,0 +1,8 @@
+numpy==1.26.4
+opencv-python==4.9.0.80
+scipy==1.14.1
+scikit-learn==1.5.2
+torch==2.3.1
+matplotlib==3.9.2
+pybullet==3.2.5
+Pillow==11.0.0

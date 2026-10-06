@@ -1,0 +1,161 @@
+{
+  "id": "down",
+  "filename": "down push.mp4",
+  "sha256": "7e2d7eb7b175b7af786a422aa96bd21bd9f15d78978ecf4be960da4962174995",
+  "frames": 1294,
+  "fps": 29.976833976833976,
+  "duration_s": 43.166666666666664,
+  "resolution": [
+    1024,
+    576
+  ],
+  "corner_pixels": [
+    [
+      120.54779052734375,
+      520.6159057617188
+    ],
+    [
+      912.64306640625,
+      538.3256225585938
+    ],
+    [
+      824.083251953125,
+      95.3116226196289
+    ],
+    [
+      214.16769409179688,
+      75.96868896484375
+    ]
+  ],
+  "pixel_to_table_homography": [
+    [
+      0.06879588401589462,
+      0.01448488550900252,
+      -15.834253604615645
+    ],
+    [
+      0.0015146028194086628,
+      -0.06774302219774453,
+      35.08551283710879
+    ],
+    [
+      -4.397627020816311e-05,
+      0.0006975077848773466,
+      1.0
+    ]
+  ],
+  "corner_drift_px_p95": [
+    4.913022235292838,
+    4.133531156399739,
+    3.3512310203075697,
+    3.2698054726135113
+  ],
+  "episodes": [
+    {
+      "episode": "down_01",
+      "window_s": [
+        6.1,
+        8.3
+      ],
+      "frames": 66,
+      "roof_pair_detected": 65,
+      "tool_pair_detected": 64,
+      "both_pairs_detected": 64,
+      "projected_displacement_cm": [
+        4.112794340843308,
+        9.314683847622128
+      ]
+    },
+    {
+      "episode": "down_02",
+      "window_s": [
+        11.5,
+        13.7
+      ],
+      "frames": 66,
+      "roof_pair_detected": 66,
+      "tool_pair_detected": 63,
+      "both_pairs_detected": 63,
+      "projected_displacement_cm": [
+        -2.439131686284643,
+        6.502357584255542
+      ]
+    },
+    {
+      "episode": "down_03",
+      "window_s": [
+        16.6,
+        19.0
+      ],
+      "frames": 72,
+      "roof_pair_detected": 72,
+      "tool_pair_detected": 67,
+      "both_pairs_detected": 67,
+      "projected_displacement_cm": [
+        -3.4360273818983593,
+        6.812344945935003
+      ]
+    },
+    {
+      "episode": "down_04",
+      "window_s": [
+        22.1,
+        24.5
+      ],
+      "frames": 72,
+      "roof_pair_detected": 71,
+      "tool_pair_detected": 64,
+      "both_pairs_detected": 64,
+      "projected_displacement_cm": [
+        4.656430243644529,
+        8.695488180808603
+      ]
+    },
+    {
+      "episode": "down_05",
+      "window_s": [
+        27.3,
+        29.2
+      ],
+      "frames": 57,
+      "roof_pair_detected": 55,
+      "tool_pair_detected": 52,
+      "both_pairs_detected": 52,
+      "projected_displacement_cm": [
+        3.1881986534476923,
+        7.555637867361561
+      ]
+    },
+    {
+      "episode": "down_06",
+      "window_s": [
+        33.1,
+        35.7
+      ],
+      "frames": 78,
+      "roof_pair_detected": 78,
+      "tool_pair_detected": 78,
+      "both_pairs_detected": 78,
+      "projected_displacement_cm": [
+        -3.2658845586426644,
+        8.231527537297069
+      ]
+    },
+    {
+      "episode": "down_07",
+      "window_s": [
+        38.2,
+        40.8
+      ],
+      "frames": 78,
+      "roof_pair_detected": 78,
+      "tool_pair_detected": 75,
+      "both_pairs_detected": 75,
+      "projected_displacement_cm": [
+        3.3826653961897684,
+        8.78474125300388
+      ]
+    }
+  ],
+  "coordinates": "Tabletop-projected proxies. Roof height uncorrected. Counts are coverage, not labelled accuracy. Tool direction prior is used only for marker association."
+}

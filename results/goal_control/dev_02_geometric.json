@@ -1,0 +1,122 @@
+{
+  "scenario": {
+    "id": "dev_02",
+    "initial_xy": [
+      0.5,
+      0.0
+    ],
+    "initial_yaw": 0.0,
+    "goal_xy": [
+      0.5,
+      0.06
+    ],
+    "friction": 0.4
+  },
+  "policy": "geometric",
+  "success": true,
+  "final_error_m": 0.0003635454504597324,
+  "pushes": 3,
+  "events": [
+    {
+      "push": 1,
+      "candidate_index": 19,
+      "axis": 1,
+      "sign": 1,
+      "offset_fraction": 0.0,
+      "length_m": 0.02,
+      "predicted_state": [
+        0.5,
+        0.02,
+        0.0
+      ],
+      "observed_before": [
+        0.5,
+        0.0,
+        0.0
+      ],
+      "observed_after": [
+        0.5002474357145935,
+        0.019953330067774812,
+        -0.0009223467693741441
+      ],
+      "prediction_position_error_m": 0.00025179856121571937,
+      "distance_to_goal_m": 0.040047434338462244
+    },
+    {
+      "push": 2,
+      "candidate_index": 19,
+      "axis": 1,
+      "sign": 1,
+      "offset_fraction": 0.0,
+      "length_m": 0.02,
+      "predicted_state": [
+        0.5002658826473655,
+        0.03995332156053978,
+        -0.0009223467693741441
+      ],
+      "observed_before": [
+        0.5002474357145935,
+        0.019953330067774812,
+        -0.0009223467693741441
+      ],
+      "observed_after": [
+        0.5003500076088099,
+        0.03989624493542683,
+        0.001776699554111544
+      ],
+      "prediction_position_error_m": 0.00010165997379649454,
+      "distance_to_goal_m": 0.020106801660696214
+    },
+    {
+      "push": 3,
+      "candidate_index": 19,
+      "axis": 1,
+      "sign": 1,
+      "offset_fraction": 0.0,
+      "length_m": 0.02,
+      "predicted_state": [
+        0.5003144736364225,
+        0.059896213368822074,
+        0.001776699554111544
+      ],
+      "observed_before": [
+        0.5003500076088099,
+        0.03989624493542683,
+        0.001776699554111544
+      ],
+      "observed_after": [
+        0.5003401530493916,
+        0.059871698801488224,
+        0.0026277867647834974
+      ],
+      "prediction_position_error_m": 3.5502059968493326e-05,
+      "distance_to_goal_m": 0.0003635454504597324
+    }
+  ],
+  "states": [
+    [
+      0.5,
+      0.0,
+      0.0
+    ],
+    [
+      0.5002474357145935,
+      0.019953330067774812,
+      -0.0009223467693741441
+    ],
+    [
+      0.5003500076088099,
+      0.03989624493542683,
+      0.001776699554111544
+    ],
+    [
+      0.5003401530493916,
+      0.059871698801488224,
+      0.0026277867647834974
+    ]
+  ],
+  "tool_contact_steps": 441,
+  "robot_body_contact_steps": 0,
+  "checkpoint_sha256": "22fd49d7188e84afc5f5390b9a2352db088bf4821f63564813ab9aa0161fe330",
+  "observation_assumption": "Exact simulated object position and yaw, identical for both controllers."
+}

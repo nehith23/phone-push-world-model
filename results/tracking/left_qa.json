@@ -1,0 +1,146 @@
+{
+  "id": "left",
+  "filename": "left push.mp4",
+  "sha256": "3ff28f6dca2131bcfa4c48bcb56113cb9934d7275a7729064725c7ad74037bdc",
+  "frames": 1415,
+  "fps": 29.98940303779583,
+  "duration_s": 47.18333333333334,
+  "resolution": [
+    1024,
+    576
+  ],
+  "corner_pixels": [
+    [
+      136.89306640625,
+      537.4025268554688
+    ],
+    [
+      942.736328125,
+      545.9060668945312
+    ],
+    [
+      850.6442260742188,
+      80.00275421142578
+    ],
+    [
+      216.30885314941406,
+      63.24784469604492
+    ]
+  ],
+  "pixel_to_table_homography": [
+    [
+      0.06464190005540796,
+      0.010826819902090834,
+      -14.66738829010383
+    ],
+    [
+      0.0006611871900702945,
+      -0.06265781538104537,
+      33.581956371099984
+    ],
+    [
+      -4.9735583734980306e-05,
+      0.0005855423140197352,
+      1.0
+    ]
+  ],
+  "corner_drift_px_p95": [
+    3.324053322685001,
+    1.797592104496797,
+    1.0017483176171995,
+    1.3329098559648616
+  ],
+  "episodes": [
+    {
+      "episode": "left_01",
+      "window_s": [
+        5.5,
+        8.4
+      ],
+      "frames": 87,
+      "roof_pair_detected": 87,
+      "tool_pair_detected": 86,
+      "both_pairs_detected": 86,
+      "projected_displacement_cm": [
+        8.271866098915531,
+        0.7002035826832333
+      ]
+    },
+    {
+      "episode": "left_02",
+      "window_s": [
+        12.8,
+        15.7
+      ],
+      "frames": 87,
+      "roof_pair_detected": 87,
+      "tool_pair_detected": 87,
+      "both_pairs_detected": 87,
+      "projected_displacement_cm": [
+        11.354565906610912,
+        0.9957162775122903
+      ]
+    },
+    {
+      "episode": "left_03",
+      "window_s": [
+        21.5,
+        23.7
+      ],
+      "frames": 66,
+      "roof_pair_detected": 66,
+      "tool_pair_detected": 66,
+      "both_pairs_detected": 66,
+      "projected_displacement_cm": [
+        9.940005100266553,
+        0.29195510803552693
+      ]
+    },
+    {
+      "episode": "left_04",
+      "window_s": [
+        28.0,
+        30.1
+      ],
+      "frames": 63,
+      "roof_pair_detected": 63,
+      "tool_pair_detected": 63,
+      "both_pairs_detected": 63,
+      "projected_displacement_cm": [
+        9.251332052365008,
+        -0.015870585534290882
+      ]
+    },
+    {
+      "episode": "left_05",
+      "window_s": [
+        34.8,
+        36.7
+      ],
+      "frames": 57,
+      "roof_pair_detected": 57,
+      "tool_pair_detected": 57,
+      "both_pairs_detected": 57,
+      "projected_displacement_cm": [
+        9.278179171220764,
+        0.42380387755668636
+      ]
+    },
+    {
+      "episode": "left_06",
+      "window_s": [
+        40.5,
+        42.4
+      ],
+      "frames": 57,
+      "roof_pair_detected": 57,
+      "tool_pair_detected": 57,
+      "both_pairs_detected": 57,
+      "projected_displacement_cm": [
+        10.57317452256379,
+        1.9795121179643616
+      ]
+    }
+  ],
+  "coordinates": "Tabletop-projected proxies. Roof height uncorrected. Counts are coverage, not labelled accuracy. Tool direction prior is used only for marker association."
+}

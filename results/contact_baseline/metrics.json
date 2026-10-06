@@ -1,0 +1,205 @@
+{
+  "rule": "If current pusher marker is within a tolerance of the oriented box and action points inward, copy tool translation; otherwise predict no movement. Heading stays constant.",
+  "chosen_margin_cm": 2.5,
+  "margin_selection": "Lowest validation position MAE; candidates fixed at 0.5, 1, 1.5, 2, 2.5, 3 projected cm. No future object state is used by predictor.",
+  "validation_grid": [
+    {
+      "margin_cm": 0.5,
+      "position_mae_projected_cm": 0.3993376789067441
+    },
+    {
+      "margin_cm": 1.0,
+      "position_mae_projected_cm": 0.2795377476766922
+    },
+    {
+      "margin_cm": 1.5,
+      "position_mae_projected_cm": 0.2705066925386553
+    },
+    {
+      "margin_cm": 2.0,
+      "position_mae_projected_cm": 0.2070387158084714
+    },
+    {
+      "margin_cm": 2.5,
+      "position_mae_projected_cm": 0.16696107804675464
+    },
+    {
+      "margin_cm": 3.0,
+      "position_mae_projected_cm": 0.17073730142823434
+    }
+  ],
+  "metrics": {
+    "train": {
+      "no_motion": {
+        "samples": 360,
+        "position_mae_projected_cm": 0.4694731689263677,
+        "position_rmse_projected_cm": 0.6992695903221896,
+        "heading_mae_deg": 1.2067051701205784,
+        "moving_samples": 187,
+        "moving_position_mae_projected_cm": 0.8886902703498066
+      },
+      "copy_pusher": {
+        "samples": 360,
+        "position_mae_projected_cm": 0.8013967080117416,
+        "position_rmse_projected_cm": 1.596912015481034,
+        "heading_mae_deg": 1.2067051701205784,
+        "moving_samples": 187,
+        "moving_position_mae_projected_cm": 0.16547652294285864
+      },
+      "contact_aware": {
+        "samples": 360,
+        "position_mae_projected_cm": 0.2016855648707164,
+        "position_rmse_projected_cm": 0.5135382222444571,
+        "heading_mae_deg": 1.2067051701205784,
+        "moving_samples": 187,
+        "moving_position_mae_projected_cm": 0.22036299465650755
+      },
+      "small_mlp": {
+        "samples": 360,
+        "position_mae_projected_cm": 0.11861223982212238,
+        "position_rmse_projected_cm": 0.14884242215934038,
+        "heading_mae_deg": 0.7160185077927483,
+        "moving_samples": 187,
+        "moving_position_mae_projected_cm": 0.11305140305363691
+      }
+    },
+    "validation": {
+      "no_motion": {
+        "samples": 73,
+        "position_mae_projected_cm": 0.5092976732373603,
+        "position_rmse_projected_cm": 0.7554940291244868,
+        "heading_mae_deg": 1.1772596556773767,
+        "moving_samples": 42,
+        "moving_position_mae_projected_cm": 0.8738315680236253
+      },
+      "copy_pusher": {
+        "samples": 73,
+        "position_mae_projected_cm": 0.6438694012983623,
+        "position_rmse_projected_cm": 1.2557057180006899,
+        "heading_mae_deg": 1.1772596556773767,
+        "moving_samples": 42,
+        "moving_position_mae_projected_cm": 0.17359685300623778
+      },
+      "contact_aware": {
+        "samples": 73,
+        "position_mae_projected_cm": 0.16696107804675464,
+        "position_rmse_projected_cm": 0.35691025085881123,
+        "heading_mae_deg": 1.1772596556773767,
+        "moving_samples": 42,
+        "moving_position_mae_projected_cm": 0.19598682913428198
+      },
+      "small_mlp": {
+        "samples": 73,
+        "position_mae_projected_cm": 0.1643670536807575,
+        "position_rmse_projected_cm": 0.21317157738099077,
+        "heading_mae_deg": 0.9831539863133381,
+        "moving_samples": 42,
+        "moving_position_mae_projected_cm": 0.14380579427066895
+      }
+    },
+    "test": {
+      "no_motion": {
+        "samples": 78,
+        "position_mae_projected_cm": 0.556804743645591,
+        "position_rmse_projected_cm": 0.806248947189507,
+        "heading_mae_deg": 0.8725284979587238,
+        "moving_samples": 42,
+        "moving_position_mae_projected_cm": 1.0218871143077728
+      },
+      "copy_pusher": {
+        "samples": 78,
+        "position_mae_projected_cm": 0.7930196182815671,
+        "position_rmse_projected_cm": 1.425480297418398,
+        "heading_mae_deg": 0.8725284979587238,
+        "moving_samples": 42,
+        "moving_position_mae_projected_cm": 0.12272485351398445
+      },
+      "contact_aware": {
+        "samples": 78,
+        "position_mae_projected_cm": 0.20407265679379108,
+        "position_rmse_projected_cm": 0.45801609306912316,
+        "heading_mae_deg": 0.8725284979587238,
+        "moving_samples": 42,
+        "moving_position_mae_projected_cm": 0.2670852091134381
+      },
+      "small_mlp": {
+        "samples": 78,
+        "position_mae_projected_cm": 0.18804492899299569,
+        "position_rmse_projected_cm": 0.2227035990810218,
+        "heading_mae_deg": 0.8784639307342434,
+        "moving_samples": 42,
+        "moving_position_mae_projected_cm": 0.17505648578489957
+      }
+    }
+  },
+  "macro_episode_metrics": {
+    "train": {
+      "no_motion": {
+        "episodes": 17,
+        "mean_episode_position_mae_projected_cm": 0.4825400776704529,
+        "mean_episode_heading_mae_deg": 1.2203187513948008
+      },
+      "copy_pusher": {
+        "episodes": 17,
+        "mean_episode_position_mae_projected_cm": 0.7820928491404356,
+        "mean_episode_heading_mae_deg": 1.2203187513948008
+      },
+      "contact_aware": {
+        "episodes": 17,
+        "mean_episode_position_mae_projected_cm": 0.20588597935613343,
+        "mean_episode_heading_mae_deg": 1.2203187513948008
+      },
+      "small_mlp": {
+        "episodes": 17,
+        "mean_episode_position_mae_projected_cm": 0.12075557272724315,
+        "mean_episode_heading_mae_deg": 0.734383286213474
+      }
+    },
+    "validation": {
+      "no_motion": {
+        "episodes": 4,
+        "mean_episode_position_mae_projected_cm": 0.5235920918681646,
+        "mean_episode_heading_mae_deg": 1.2095343433896673
+      },
+      "copy_pusher": {
+        "episodes": 4,
+        "mean_episode_position_mae_projected_cm": 0.656205652136855,
+        "mean_episode_heading_mae_deg": 1.2095343433896673
+      },
+      "contact_aware": {
+        "episodes": 4,
+        "mean_episode_position_mae_projected_cm": 0.18123711231102557,
+        "mean_episode_heading_mae_deg": 1.2095343433896673
+      },
+      "small_mlp": {
+        "episodes": 4,
+        "mean_episode_position_mae_projected_cm": 0.17247808219441121,
+        "mean_episode_heading_mae_deg": 0.9963831160185337
+      }
+    },
+    "test": {
+      "no_motion": {
+        "episodes": 4,
+        "mean_episode_position_mae_projected_cm": 0.5887969455566825,
+        "mean_episode_heading_mae_deg": 0.8420933354691851
+      },
+      "copy_pusher": {
+        "episodes": 4,
+        "mean_episode_position_mae_projected_cm": 0.7623644139084875,
+        "mean_episode_heading_mae_deg": 0.8420933354691851
+      },
+      "contact_aware": {
+        "episodes": 4,
+        "mean_episode_position_mae_projected_cm": 0.209941511677229,
+        "mean_episode_heading_mae_deg": 0.8420933354691851
+      },
+      "small_mlp": {
+        "episodes": 4,
+        "mean_episode_position_mae_projected_cm": 0.19050323890478496,
+        "mean_episode_heading_mae_deg": 0.8504025154326513
+      }
+    }
+  },
+  "checkpoint_sha256": "22fd49d7188e84afc5f5390b9a2352db088bf4821f63564813ab9aa0161fe330",
+  "evaluation_note": "Exploratory added baseline after initial held-out results were seen. Frozen neural weights; tolerance chosen on validation only. A fresh recording session is needed for a stronger final comparison."
+}

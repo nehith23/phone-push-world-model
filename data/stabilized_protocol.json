@@ -1,0 +1,15 @@
+{
+  "status": "Development protocol specified before stabilized extraction, retraining and control comparison. Earlier video and simulation results have been inspected.",
+  "measurements": "remeasured_setup.json: 40 x 30 cm workspace, 9 mm front-marker offset, 40 mm tool marker spacing, approximate 30 mm roof marker spacing, 78.5 x 37 x 33 mm object.",
+  "historical_caveat": "Applying remeasurements to original clips assumes physical marker geometry remained comparable before the stickers were secured; this is not independently verified.",
+  "camera": "Estimate a table homography independently in each accepted frame from four colour markers. Require four observed, uniquely associated corners, convex quadrilateral and 0.75-1.25 initial image area. No interpolation, holding old homographies or inferred missing observations.",
+  "corner_max_distance_from_initial_px": 40,
+  "marker_spacing_gate_relative_tolerance": 0.25,
+  "filter_note": "Accept apparent tool spacing 3-5 cm and roof spacing 2.25-3.75 cm. These broad fixed gates reject gross geometry/association failures; accepted frames are still approximate. Report directional attrition, not just retained-sample accuracy.",
+  "observation": "Use magenta-only tool detection, then the existing per-direction pairing prior. Map roof and tool markers through the table homography; roof and tool heights remain uncorrected. Extrapolate the contact proxy by 9/40 of the tool marker vector.",
+  "transitions": "Three-frame transitions at the original stride; all four frames accepted, consecutive, same episode; reject per-frame object jumps over 2 cm or contact-proxy jumps over 3 cm. No interpolation or synthetic training data.",
+  "splits": "Original episodes retain train/validation/test membership. All eight new pilot episodes are explicitly training/development data, since they have already been inspected and used to adjust tracking. The original test split is now a reused development check, not fresh final evidence.",
+  "training": "Same 12-32-32-3 tanh MLP, seed 7, AdamW lr 0.003 weight decay 0.001, max 1500 epochs, patience 180; normalization on training only and stopping on original validation episodes. Also train an old-data-only model on the same stabilized inputs to isolate the incremental effect of pilot training examples.",
+  "control": "Compare original, 11 mm, stabilized old-data-only, stabilized-plus-pilot and geometric predictors. Use the same 12 reused scenarios, with revised object dimensions for every controller in this comparison. Keep action count, lengths, goals, physics settings and budget unchanged; original tools/results remain intact.",
+  "scope": "One fixed filtering/training experiment. Do not tune thresholds or architecture on the resulting scores. Future final evaluation must be separate."
+}

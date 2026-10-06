@@ -1,0 +1,14 @@
+{
+  "description": "User-collected phone videos. Windows are manual review bounds around pushes, excluding hand resets; not exact contact annotations.",
+  "units": "cm",
+  "measurement_provenance": "Historical dimensions used in the original and 11 mm experiments. Latest user-confirmed remeasurements of the same setup are stored separately in remeasured_setup.json and have not yet been applied to these results.",
+  "workspace": {"width": 41.0, "depth": 29.0},
+  "object": {"length": 8.0, "width": 3.5, "roof_height": 3.5, "description": "Rigid robot top cover, no wheels, sliding on base"},
+  "pusher": {"marker_spacing": 4.0, "marker_height": null, "marker_to_contact_offset": 1.1, "marker_to_contact_offset_note": "User measured approximately 11 mm from the front pink marker centre to the contacting caliper edge. Physical distance; not a calibrated tabletop-projected offset. Original tracks are preserved; contact_proxy experiments extrapolate along the observed marker vector by 1.1/4.", "same_contact_edge_all_clips_confirmed": true, "user_note": "Caliper shaft was close to flat but not resting flat on the table. User confirmed the same edge was used in every push and confirmed all four direction labels."},
+  "videos": [
+    {"id": "left", "filename": "left push.mp4", "screen_push_direction": [1,0], "windows": [[5.5,8.4],[12.8,15.7],[21.5,23.7],[28.0,30.1],[34.8,36.7],[40.5,42.4]]},
+    {"id": "right", "filename": "right push.mp4", "screen_push_direction": [-1,0], "windows": [[9.6,11.5],[15.3,17.5],[21.2,23.5],[27.8,29.7],[33.2,35.4],[38.3,40.4]]},
+    {"id": "down", "filename": "down push.mp4", "screen_push_direction": [0,-1], "windows": [[6.1,8.3],[11.5,13.7],[16.6,19.0],[22.1,24.5],[27.3,29.2],[33.1,35.7],[38.2,40.8]]},
+    {"id": "top", "filename": "top push.mp4", "screen_push_direction": [0,1], "windows": [[9.0,11.5],[14.9,17.5],[21.4,24.1],[27.5,30.1],[33.8,36.5],[40.4,42.7]]}
+  ]
+}

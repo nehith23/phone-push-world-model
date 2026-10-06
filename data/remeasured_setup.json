@@ -1,0 +1,10 @@
+{
+  "status": "Latest user-confirmed physical measurements. Used in pilot_v2 QA and the separate stabilized extraction/training and revised-dimension control experiments. Original and 11 mm result folders retain their historical settings.",
+  "provenance": "User remeasured the same setup after securing the sticky notes with tape and marking their centres. User confirmed that 9 mm replaces the approximate 11 mm marker-to-contact estimate, and corrected the workspace/marker-spacing units to cm.",
+  "units": "mm",
+  "workspace": {"width_left_to_right": 400.0, "depth_near_to_far": 300.0, "between": "corner-marker centres", "approximate": true},
+  "object": {"length": 78.5, "width": 37.0, "roof_height": 33.0, "roof_marker_center_spacing": 30.0, "roof_marker_spacing_approximate": true, "roof_marker_midpoint_equals_body_center_confirmed": null},
+  "pusher": {"marker_center_spacing": 40.0, "marker_spacing_approximate": true, "front_marker_center_to_contact_edge": 9.0, "offset_measured_while_touching_cover": true, "same_contact_edge_all_clips_confirmed": true, "marker_height_above_table": null, "pilot_v2_user_note": "User tried to push at the centre of the cover side and keep the pink markers flat; marker height was not measured. This does not establish roof-marker midpoint alignment or a measured tool height."},
+  "video_directions": {"left": "left to right", "right": "right to left", "top": "top to bottom / toward camera", "down": "bottom to top / away from camera"},
+  "historical_results": "manifest.json retains the dimensions assumed in the original and 11 mm experiments. Do not relabel those results as using these revised measurements. Securing stickers may affect exact centre locations, so historical pixel correspondences need checking before retrospective recalibration."
+}

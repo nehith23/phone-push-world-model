@@ -1,0 +1,16 @@
+{
+  "filename": "calibration_pilot_v2.mp4",
+  "role": "Development pilot; not held-out evaluation data.",
+  "measurements": "remeasured_setup.json",
+  "window_note": "Manual review bounds around approach, push and withdrawal. Reset hands touching the object are excluded. These are not exact contact annotations. Episode order follows the actual video, not the requested recording order.",
+  "episodes": [
+    {"id": "v2_left_01", "direction": "left", "window_s": [6.5, 8.8], "screen_direction": [1, 0]},
+    {"id": "v2_left_02", "direction": "left", "window_s": [12.1, 14.2], "screen_direction": [1, 0]},
+    {"id": "v2_top_01", "direction": "top", "window_s": [19.6, 22.7], "screen_direction": [0, 1]},
+    {"id": "v2_top_02", "direction": "top", "window_s": [26.1, 28.9], "screen_direction": [0, 1]},
+    {"id": "v2_right_01", "direction": "right", "window_s": [32.7, 34.3], "screen_direction": [-1, 0]},
+    {"id": "v2_right_02", "direction": "right", "window_s": [37.4, 39.2], "screen_direction": [-1, 0]},
+    {"id": "v2_down_01", "direction": "down", "window_s": [43.1, 45.5], "screen_direction": [0, -1]},
+    {"id": "v2_down_02", "direction": "down", "window_s": [47.6, 49.4], "screen_direction": [0, -1]}
+  ]
+}

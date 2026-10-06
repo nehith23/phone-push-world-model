@@ -1,0 +1,2 @@
+# Preserve exact bytes required by the frozen code and checkpoint hashes.
+* -text

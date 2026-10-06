@@ -1,0 +1,236 @@
+{
+  "protocol": {
+    "seed": 20261005,
+    "success_distance_m": 0.015,
+    "max_pushes": 8,
+    "observations": "Exact simulated object position and yaw, identical for both controllers.",
+    "candidates": "Four object-relative inward directions, three lateral offsets, two stroke lengths.",
+    "split_note": "Reused scenarios after original evaluation inspection. Development comparison only; not fresh held-out evidence.",
+    "development": [
+      {
+        "id": "dev_01",
+        "initial_xy": [
+          0.5,
+          0.0
+        ],
+        "initial_yaw": 0.0,
+        "goal_xy": [
+          0.56,
+          0.0
+        ],
+        "friction": 0.4
+      },
+      {
+        "id": "dev_02",
+        "initial_xy": [
+          0.5,
+          0.0
+        ],
+        "initial_yaw": 0.0,
+        "goal_xy": [
+          0.5,
+          0.06
+        ],
+        "friction": 0.4
+      },
+      {
+        "id": "dev_03",
+        "initial_xy": [
+          0.5,
+          0.0
+        ],
+        "initial_yaw": 0.0,
+        "goal_xy": [
+          0.44,
+          7.347880794884118e-18
+        ],
+        "friction": 0.4
+      },
+      {
+        "id": "dev_04",
+        "initial_xy": [
+          0.5,
+          0.0
+        ],
+        "initial_yaw": 0.0,
+        "goal_xy": [
+          0.5,
+          -0.06
+        ],
+        "friction": 0.4
+      }
+    ],
+    "evaluation": [
+      {
+        "id": "eval_01",
+        "initial_xy": [
+          0.4951780337394524,
+          -0.0029117029312219593
+        ],
+        "initial_yaw": -0.025912913629283385,
+        "goal_xy": [
+          0.5539181438651976,
+          -0.0029117029312219593
+        ],
+        "friction": 0.25
+      },
+      {
+        "id": "eval_02",
+        "initial_xy": [
+          0.5038382325248105,
+          0.007837599016137575
+        ],
+        "initial_yaw": -0.0014136627462770224,
+        "goal_xy": [
+          0.560485087516394,
+          0.04054267599427398
+        ],
+        "friction": 0.4
+      },
+      {
+        "id": "eval_03",
+        "initial_xy": [
+          0.49369546228351574,
+          -0.008100660484264364
+        ],
+        "initial_yaw": -0.22653885094826742,
+        "goal_xy": [
+          0.5272344918723659,
+          0.04999064280018009
+        ],
+        "friction": 0.6
+      },
+      {
+        "id": "eval_04",
+        "initial_xy": [
+          0.4921774014796842,
+          0.010237349602440802
+        ],
+        "initial_yaw": 0.23198457138561623,
+        "goal_xy": [
+          0.4921774014796842,
+          0.0670375165347563
+        ],
+        "friction": 0.25
+      },
+      {
+        "id": "eval_05",
+        "initial_xy": [
+          0.48554187380927666,
+          0.011242893355502253
+        ],
+        "initial_yaw": -0.14229540231386656,
+        "goal_xy": [
+          0.4518419491368854,
+          0.06961287509932783
+        ],
+        "friction": 0.4
+      },
+      {
+        "id": "eval_06",
+        "initial_xy": [
+          0.5106775427806972,
+          -0.004639510064104945
+        ],
+        "initial_yaw": 0.1017722695447984,
+        "goal_xy": [
+          0.45515518074146133,
+          0.02741634060529176
+        ],
+        "friction": 0.6
+      },
+      {
+        "id": "eval_07",
+        "initial_xy": [
+          0.4950666402569727,
+          0.010705167786907825
+        ],
+        "initial_yaw": 0.13562149994335398,
+        "goal_xy": [
+          0.4400523797046837,
+          0.010705167786907832
+        ],
+        "friction": 0.25
+      },
+      {
+        "id": "eval_08",
+        "initial_xy": [
+          0.4893069710597763,
+          0.006734659362405145
+        ],
+        "initial_yaw": 0.06331021862882064,
+        "goal_xy": [
+          0.4406466209334189,
+          -0.02135940688190871
+        ],
+        "friction": 0.4
+      },
+      {
+        "id": "eval_09",
+        "initial_xy": [
+          0.5046393409006033,
+          -0.012957416973588012
+        ],
+        "initial_yaw": 0.06427957236653581,
+        "goal_xy": [
+          0.4738405020296008,
+          -0.06630257071229145
+        ],
+        "friction": 0.6
+      },
+      {
+        "id": "eval_10",
+        "initial_xy": [
+          0.49222883943833917,
+          0.0003507612360542766
+        ],
+        "initial_yaw": -0.1120031880943334,
+        "goal_xy": [
+          0.49222883943833917,
+          -0.07269435432999313
+        ],
+        "friction": 0.25
+      },
+      {
+        "id": "eval_11",
+        "initial_xy": [
+          0.49099276969570277,
+          0.001656159962162982
+        ],
+        "initial_yaw": -0.00453879679429825,
+        "goal_xy": [
+          0.5219757523199094,
+          -0.052007940112986706
+        ],
+        "friction": 0.4
+      },
+      {
+        "id": "eval_12",
+        "initial_xy": [
+          0.5008081868425618,
+          0.005686877001387716
+        ],
+        "initial_yaw": 0.10227016024382463,
+        "goal_xy": [
+          0.5576462821953558,
+          -0.027128612650773556
+        ],
+        "friction": 0.6
+      }
+    ]
+  },
+  "summary": {
+    "geometric": {
+      "episodes": 12,
+      "successes": 12,
+      "mean_final_error_cm": 1.0022371718835787,
+      "mean_pushes": 3.6666666666666665
+    },
+    "learned": {
+      "episodes": 12,
+      "successes": 7,
+      "mean_final_error_cm": 2.6774615216839432,
+      "mean_pushes": 5.916666666666667
+    }
+  }
+}

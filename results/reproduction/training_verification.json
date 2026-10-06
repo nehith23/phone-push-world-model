@@ -1,0 +1,16 @@
+{
+  "old_only": {
+    "maximum_weight_absolute_difference": 0.0,
+    "original_best_epoch": 259,
+    "rebuilt_best_epoch": 259,
+    "same_sample_counts": true,
+    "normalization_matches_atol": 1e-10
+  },
+  "plus_pilot": {
+    "maximum_weight_absolute_difference": 0.0,
+    "original_best_epoch": 350,
+    "rebuilt_best_epoch": 350,
+    "same_sample_counts": true,
+    "normalization_matches_atol": 1e-10
+  }
+}
