@@ -4,7 +4,7 @@ I filmed myself pushing a small box across a desk with a marked caliper. From th
 
 ![Recorded push (left) driving the simulated Panda (right)](results/demo/left_push_demo.gif)
 
-_This clip is the recorded tool path replayed on the robot. The learned controller is in the [final 40 s demo](results/precision/demo/precision_demo.mp4)._
+_This clip is the recorded tool path replayed on the robot. The learned controller is shown in the 40-second demo: [download the video](results/precision/demo/precision_demo.mp4)._
 
 > **What this shows, and what it does not**
 >
@@ -107,7 +107,7 @@ Scripts used by the frozen evaluations keep their original names and bytes, beca
 
 ## Assistance and authorship
 
-I collected the recordings, designed the experiments, implemented the tracking, model, controller and evaluation pipeline, ran the experiments, and wrote the analysis. I used Codex for implementation support, debugging suggestions, code review, and documentation editing. I also used Github Copilot/Claude (Anthropic) to restructure and edit the README and supporting documentation, verify that the pipeline reproduces on Windows and Linux, and review the repository before publication. These tools did not collect the data, design the experiments, choose the scientific claims or replace my review. The scope of both is described in [ASSISTANCE.md](ASSISTANCE.md).
+I recorded the data, built and measured the setup, and ran and reviewed the experiments. Codex provided substantial assistance with implementation, experimental design, debugging, evaluation and documentation, and Claude (Anthropic) helped with documentation and reproducibility checks. Details are in [ASSISTANCE.md](ASSISTANCE.md).
 
 ## License
 
