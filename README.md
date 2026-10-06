@@ -107,7 +107,7 @@ Scripts used by the frozen evaluations keep their original names and bytes, beca
 
 ## Assistance and authorship
 
-I collected the recordings, designed the experiments, implemented the tracking, model, controller and evaluation pipeline, ran the experiments, and wrote the analysis. I used GitHub Copilot/Codex for implementation support, debugging suggestions, code review, documentation editing and structured analysis prompts. I also used Claude (Anthropic) to restructure and edit the README and supporting documentation, verify that the pipeline reproduces on Windows and Linux, and review the repository before publication. These tools did not collect the data, design the experiments, choose the scientific claims or replace my review. The scope of both is described in [ASSISTANCE.md](ASSISTANCE.md).
+I collected the recordings, designed the experiments, implemented the tracking, model, controller and evaluation pipeline, ran the experiments, and wrote the analysis. I used Codex for implementation support, debugging suggestions, code review, and documentation editing. I also used Github Copilot/Claude (Anthropic) to restructure and edit the README and supporting documentation, verify that the pipeline reproduces on Windows and Linux, and review the repository before publication. These tools did not collect the data, design the experiments, choose the scientific claims or replace my review. The scope of both is described in [ASSISTANCE.md](ASSISTANCE.md).
 
 ## License
 
