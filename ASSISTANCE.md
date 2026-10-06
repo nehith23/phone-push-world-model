@@ -1,7 +1,7 @@
 # Assistance and authorship
 
-I collected the phone recordings, chose the task and experimental questions, designed the data representation and evaluation protocols, implemented the tracking, model, controller and reporting pipeline, ran the experiments, and interpreted the results.
+I recorded the five phone videos, built and measured the physical setup (markers, caliper pusher, workspace) and wrote the initial code. I ran and reviewed the experiments, decided which results to report, and take responsibility for every claim in this repository.
 
-I used Codex for implementation support, debugging suggestions, code review, and documentation editing. I also used GitHub Copilot/Claude (Anthropic) to restructure and edit the README and supporting documentation, verify that the pipeline reproduces on Windows and Linux, and review the repository before publication. These tools did not collect the data, design the experiments, choose the scientific claims, run the physical recording process, or replace my review of the results.
+Codex provided substantial assistance with implementation, experimental design, debugging, evaluation and documentation. I worked with it iteratively: I started from my own boilerplate, it extended and revised the code and proposed analyses, and I reviewed and checked the results.
 
-The reported measurements, failure analysis, limitations and conclusions are based on my experiments and my decisions about which results to include. This file is included so the use of coding assistance is clear without obscuring the authorship of the work.
+Claude (Anthropic) helped restructure and edit the README and documentation, verified that the pipeline reproduces on Windows and Linux, and reviewed the repository before publication.
