@@ -67,7 +67,7 @@ Judge the model by both control success and error, rather than just offline pred
 ## Reproduce
 
 ```powershell
-python scripts/stabilize_dataset.py --video-dir "C:\path\to\recordings"
+python scripts/stabilize_dataset.py --video-dir data/raw
 python scripts/train_stabilized.py
 python scripts/control_stabilized.py
 python scripts/report_stabilized.py

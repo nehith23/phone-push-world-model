@@ -33,6 +33,6 @@ This pilot is development data. No updated model performance claim follows from 
 
 ## Reproduce
 
-`python scripts/review_pilot_v2.py --source "C:\path\to\calibration_pilot_v2.mp4"`
+`python scripts/review_pilot_v2.py --source data/raw/calibration_pilot_v2.mp4`
 
 Windows and directions are in `data/pilot_v2_manifest.json`. Full observed tracks, source hash, geometry snapshot and coverage statistics are saved beside this report.

@@ -21,13 +21,13 @@ python -m pip install -r requirements-lock.txt
 python -m pip check
 ```
 
-The clean verification environment was created with Conda and the Python packages were installed with `uv pip`, using the same pinned versions. `pip` subsequently confirmed every lock-file requirement was satisfied; its sandbox-specific temporary-directory cleanup warnings did not change the installed packages. If using uv, activate the Conda environment first and explicitly target its Python executable:
+The clean verification environment was created with Conda and the Python packages were installed with `uv pip`, using the same pinned versions. `pip` subsequently confirmed every lock-file requirement was satisfied. If using uv, activate the Conda environment first and explicitly target its Python executable:
 
 ```powershell
 uv pip install --python "$env:CONDA_PREFIX\python.exe" -r requirements-lock.txt
 ```
 
-The Conda lock is platform-specific. Linux was verified separately with Python 3.11 and `uv pip install -r requirements.txt`, where PyBullet 3.2.5 builds from source: artifact checks, all tests, dataset re-extraction and all 48 frozen trials reproduced, with retrained weights within 6e-6 ([evidence](../results/reproduction/linux_verification.json)). macOS has not been verified. [requirements.txt](../requirements.txt) lists the direct Python dependencies, but is not a complete cross-platform simulator lock. Different physics builds or numerical libraries can change trajectories and action choices even when the source code is unchanged.
+The Conda lock is platform-specific. Linux was verified separately with Python 3.11 and `uv pip install -r requirements.txt`, where PyBullet 3.2.5 builds from source: artifact checks, all tests, dataset re-extraction and all 48 frozen trials reproduced, with retrained weights within 6e-6 ([evidence](../results/reproduction/linux_verification.json)). A second clean Windows run rebuilt the environment from the lock files and repeated every step, including dataset re-extraction, retraining and the demo, with identical results ([evidence](../results/reproduction/windows_end_to_end.json)). macOS has not been verified. [requirements.txt](../requirements.txt) lists the direct Python dependencies, but is not a complete cross-platform simulator lock. Different physics builds or numerical libraries can change trajectories and action choices even when the source code is unchanged.
 
 ## Verify and run the frozen controller
 

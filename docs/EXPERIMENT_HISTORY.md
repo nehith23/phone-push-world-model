@@ -86,7 +86,7 @@ From this repository directory, create an environment and install `requirements.
 
 ```powershell
 # Process the original recordings when available.
-python scripts/extract_tracks.py --video-dir "C:\path\to\recordings"
+python scripts/extract_tracks.py --video-dir data/raw
 
 # The saved tracks are included, so these run without the original videos.
 python scripts/train_baseline.py
@@ -97,7 +97,7 @@ python scripts/diagnose_transfer.py
 python -m unittest discover -s tests -v
 
 # Optional: rebuild the side-by-side demo using the original recordings.
-python scripts/make_demo.py --video-dir "C:\path\to\recordings"
+python scripts/make_demo.py --video-dir data/raw
 ```
 
 Expected recording filenames: `left push.mp4`, `right push.mp4`, `down push.mp4`, `top push.mp4`. The manifest contains measured dimensions and manual review windows. Each tracking QA file records the original video's SHA-256 hash. Raw videos are not included in this draft; processed tracks and results are included. Thresholds currently target this fixed scene and its marker colours.

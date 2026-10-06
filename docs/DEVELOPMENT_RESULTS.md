@@ -1,8 +1,12 @@
+# Development results
+
+How data processing and the pilot recording changed the learned controller, and the earlier 1.5 cm evaluation that preceded the final 5 mm one. The final results are in the [README](../README.md).
+
 ## Data improvements and earlier 1.5 cm evaluation
 
-The latest processing independently estimates the table mapping in each frame with four reliably observed corner markers. Missing or ambiguous observations are rejected, never interpolated. Broad fixed spacing gates reject gross marker geometry errors. A 9/40 shaft-vector extrapolation estimates the contact point. Height, tilt and object-centre alignment remain approximate; framewise mapping can add detector jitter.
+The final processing independently estimates the table mapping in each frame with four reliably observed corner markers. Missing or ambiguous observations are rejected, never interpolated. Broad fixed spacing gates reject gross marker geometry errors. A 9/40 shaft-vector extrapolation estimates the contact point. Height, tilt and object-centre alignment remain approximate; framewise mapping can add detector jitter.
 
-Cleaned original recordings supply 264 training, 61 validation and 58 reused-test transitions. The new eight-push pilot adds **160 training transitions**, for **424 training examples**. Original test clips and the inspected pilot are development data. Filtering disproportionately removes original bottom-to-top observations; only one validation transition remains in that direction. The retained-sample scores do not hide this coverage limitation.
+Cleaned original recordings supply 264 training, 61 validation and 58 reused-test transitions. The eight-push pilot adds **160 training transitions**, for **424 training examples**. Original test clips and the inspected pilot are development data. Filtering disproportionately removes original bottom-to-top observations; only one validation transition remains in that direction. The retained-sample scores do not hide this coverage limitation.
 
 All development controllers were rerun on the same revised 78.5 x 37 x 33 mm box:
 

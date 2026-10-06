@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "date": "2026-10-06",
+  "platform": "Windows x64, CPU only",
+  "environment": "New Conda environment created from environment-win-64.lock.txt, then pip install -r requirements-lock.txt; pip check clean",
+  "python": "3.11.10 (conda-forge)",
+  "package_versions": {
+    "torch": "2.3.1+cpu",
+    "numpy": "1.26.4",
+    "opencv": "4.9.0",
+    "scipy": "1.14.1",
+    "scikit-learn": "1.5.2",
+    "matplotlib": "3.9.2",
+    "pillow": "11.0.0",
+    "pybullet": "3.2.5 (conda-forge build)"
+  },
+  "steps": {
+    "verify_artifacts": "PASS before and after the rerun",
+    "unit_tests": "21/21 passed",
+    "frozen_precision_rerun": "48 trials; identical to the saved records (successes, push counts, chosen actions and all states; max difference 0). Geometric 24/24, learned 23/24, precision_06 fails at 56.37 mm",
+    "final_demo": "Re-rendered 408 frames (40.8 s); both replays match the saved states and selected actions",
+    "dataset_rebuild": "Re-extracted from the five raw videos: 543 transitions (424 train, 61 validation, 58 test), identical to the submitted dataset",
+    "retraining": "old_only and plus_pilot retrained; weights identical to the submitted checkpoints (max difference 0)"
+  },
+  "scope": "All steps ran on fresh copies of the repository. This reproduces the saved results; it is not a new independent sample."
+}

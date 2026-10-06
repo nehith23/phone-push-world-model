@@ -4,7 +4,7 @@
 
 I recorded myself pushing a small rigid cover with a marked caliper. I tracked the cover and tool to turn video into state/action examples. A small neural network learns how object position and orientation change when the tool moves. In simulation, a planner asks that model what different pushes might do, selects one, executes it with a Panda arm, then observes and replans.
 
-The final learned controller reaches 23 of 24 simulation targets within 5 mm. A geometric controller reaches all 24 and is more accurate and efficient. My contribution is the personally collected data and the complete, inspectable experiment; I do not claim learning beats geometry. I used Codex as a coding assistant for implementation and analysis.
+The final learned controller reaches 23 of 24 simulation targets within 5 mm. A geometric controller reaches all 24 and is more accurate and efficient. My contribution is the personally collected data and the complete, inspectable experiment; I do not claim learning beats geometry. I used GitHub Copilot/Codex for implementation support, debugging suggestions, code review, documentation editing and structured analysis prompts. I also used Claude (Anthropic) to restructure and edit the README and supporting documentation, verify that the pipeline reproduces on Windows and Linux, and review the repository before publication. These tools did not collect the data, design the experiments, choose the scientific claims or replace my review.
 
 ## Design questions
 
